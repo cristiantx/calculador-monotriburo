@@ -14,22 +14,24 @@ var table = new Table({
   , colWidths: [20, 20, 20, 20]
 });
 
-fs.readdir('./facturas', (err, files) => {
+fs.readdir('./facturas2', (err, files) => {
     files.filter(file => file.endsWith('xml')).forEach(file => {
         filePromises.push(
-            read(__dirname + '/facturas/' + file)
+            read(__dirname + '/facturas2/' + file)
             .then((data) => {
                     return parse(data); 
                 })
             .then((result) => {
-                const f = result.comprobante;
+// console.log(result);
+                const f = result['cfdi:Comprobante']['$'];
                 const data = [
-                    f.fechaemision[0],
-                    f.importetotal[0], 
-                    f.tipocambio[0], 
-                    f.importetotal[0] * f.tipocambio[0]
+                    f.Fecha,
+                    f.Total,
+1,
+                    f.Moneda
+//                    f.importetotal[0] * f.tipocambio[0]
                 ];
-                grandTotal = grandTotal + f.importetotal[0] * f.tipocambio[0];
+//                grandTotal = grandTotal + f.importetotal[0] * f.tipocambio[0];
                 table.push(data);
                 return true;
             })
