@@ -2,27 +2,32 @@
 # yarn lockfile v1
 
 
-cli-table@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.1.tgz#f53b05266a8b1a0b934b3d0821e6e2dc5914ae23"
+"cli-table@^0.3.1":
+  "resolved" "https://registry.npmjs.org/cli-table/-/cli-table-0.3.1.tgz"
+  "version" "0.3.1"
   dependencies:
-    colors "1.0.3"
+    "colors" "1.0.3"
 
-colors@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
+"colors@1.0.3":
+  "resolved" "https://registry.npmjs.org/colors/-/colors-1.0.3.tgz"
+  "version" "1.0.3"
 
-sax@>=0.6.0:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+"csv-file-creator@^1.0.9":
+  "integrity" "sha512-8ds8CyAnGdMRPxEjyhUvar8AeiW1GE4RKqr50moK7Xq7LzpNe9i/DQ3moUi2Q51dEnKxQH9kKwYkjSfLn3p2Bw=="
+  "resolved" "https://registry.npmjs.org/csv-file-creator/-/csv-file-creator-1.0.9.tgz"
+  "version" "1.0.9"
 
-xml2js@^0.4.19:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
+"sax@>=0.6.0":
+  "resolved" "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
+  "version" "1.2.4"
+
+"xml2js@^0.4.19":
+  "resolved" "https://registry.npmjs.org/xml2js/-/xml2js-0.4.19.tgz"
+  "version" "0.4.19"
   dependencies:
-    sax ">=0.6.0"
-    xmlbuilder "~9.0.1"
+    "sax" ">=0.6.0"
+    "xmlbuilder" "~9.0.1"
 
-xmlbuilder@~9.0.1:
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.4.tgz#519cb4ca686d005a8420d3496f3f0caeecca580f"
+"xmlbuilder@~9.0.1":
+  "resolved" "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-9.0.4.tgz"
+  "version" "9.0.4"
